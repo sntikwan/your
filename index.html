@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <audio controls autoplay loop>
+    <source src="Audio.mp3" type="audio/mpeg">
+</audio>
+    
+<title>Untuk SAYANGG ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffc1d9, #fff0f5, #ffb6d5);
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.card {
+    background: white;
+    max-width: 420px;
+    width: 100%;
+    padding: 30px 23px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 35px #e87ba755;
+    border: 3px dashed #ff91bb;
+    position: relative;
+    z-index: 2;
+}
+
+.bear {
+    font-size: 80px;
+    animation: goyang 2s infinite;
+}
+
+@keyframes goyang {
+    0%, 100% { transform: rotate(-7deg); }
+    50% { transform: rotate(7deg); }
+}
+
+h1 {
+    color: #ff5797;
+    margin: 12px 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #ff8bb6;
+    margin-bottom: 20px;
+}
+
+.message {
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 20px;
+    color: #a94c75;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.message strong {
+    color: #ff5797;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #ff75a8;
+    font-size: 13px;
+}
+
+.heart {
+    position: fixed;
+    top: -30px;
+    animation: jatuh linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes jatuh {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="bear">🐻‍❄️</div>
+
+    <h1>GOOD MORNING, SAAYYYAANNGG 💗</h1>
+
+    <p class="subtitle">
+        Selamat pagiii manusia lucuuu! 🌷
+    </p>
+
+    <div class="message">
+
+        <strong>HALOOOO SAYANGGG! ❤️</strong>
+
+        <br><br>
+
+        Gimana tidurnya semalam?
+        Nyenyak nggak?
+        Atau malah mimpi jadi miliarder? WKWKWK. 😭
+
+        <br><br>
+
+        Selamat pagi sayanggg!
+        🌞
+
+        Semoga pagi ini kamu bangun dengan senyuman,
+        hati yang bahagia, dan semangat yang luar biasa.
+
+        <br><br>
+
+        Jangan lupa sarapan, yaaa!
+        Kamu itu manusia, bukan kulkas
+        yang bisa hidup tanpa diisi. 😭
+
+        <br><br>
+
+        Kalau hari ini terasa melelahkan,
+        jangan lupa istirahat.
+        Nggak harus selalu sempurna,
+        yang penting tetap berusaha.
+
+        <br><br>
+
+        Semoga semua urusanmu dimudahkan,
+        rezekimu dilancarkan,
+        dan selalu ada alasan untuk tersenyum.
+
+        <br><br>
+
+        <strong>
+        POKOKNYA HARI INI HARUS BAHAGIAAA!!
+        <br>
+        KALAU NGGAK, KOMPLAIN KE MATAHARI! ☀️🤣
+        </strong>
+
+        <br><br>
+
+        <strong>I LOVE YOUR SMILE, CANNTIKK! 💕</strong>
+
+    </div>
+
+    <div class="footer">
+        Dibuat dengan penuh cinta ❤️
+        <br>
+        Khusus untuk CANTIKNYAA ACUU yang katanya lucu itu. 🤭
+    </div>
+
+</div>
+
+<script>
+function buatHati() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+
+    const emoji = ["❤️", "💕", "💗", "💖", "🌸"];
+    heart.innerHTML = emoji[Math.floor(Math.random() * emoji.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 20) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 8000);
+}
+
+setInterval(buatHati, 500);
+</script>
+
+</body>
+</html>
